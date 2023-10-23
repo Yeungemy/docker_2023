@@ -12,3 +12,7 @@
 # building a dockerfile: docker build . 
 # run a docker file:docker run #fileId
 
+# nodejs project
+docker build -t $customTag .
+docker run -p 4200:8080 $imageId(or $tagId)
+
