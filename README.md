@@ -4,6 +4,7 @@
 
 # Create an image: docker create hello-world
 # Run an image: docker start -a $imageId == docker start $imageId & docker logs $imageId
+# to remove all images: docker rm -f $(docker ps -aq)
 # To see all images: docker ps --all 
 # To see running images: docker ps
 # To remove all stopped images: docker system prune
@@ -15,4 +16,7 @@
 # nodejs project
 docker build -t $customTag .
 docker run -p 4200:8080 $imageId(or $tagId)
+
+# docker compose
+docker-compose up build 
 
